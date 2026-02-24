@@ -1,0 +1,79 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://github.com/mgifford/w3c-linkedobjects",
+  "@type": "Dataset",
+  "identifier": "w3c-linkedobjects",
+  "title": "W3C Accessibility Standards in JSON-LD",
+  "name": "w3c-linkedobjects",
+  "description": "Machine-readable accessibility standards in JSON-LD format for AI systems",
+  "version": "0.1.0",
+  "dateCreated": "2024-02-24",
+  "license": "MIT",
+  "url": "https://github.com/mgifford/w3c-linkedobjects",
+  
+  "standards": [
+    {
+      "@id": "standards/wcag-2.2.jsonld",
+      "name": "WCAG 2.2",
+      "description": "Web Content Accessibility Guidelines 2.2",
+      "publisher": "W3C",
+      "status": "recommendation",
+      "datePublished": "2023-10-05"
+    },
+    {
+      "@id": "standards/aria.jsonld",
+      "name": "ARIA 1.2",
+      "description": "Accessible Rich Internet Applications 1.2",
+      "publisher": "W3C",
+      "status": "recommendation",
+      "datePublished": "2023-06-06"
+    }
+  ],
+  
+  "rules": [
+    {
+      "@id": "rules/axe-core.jsonld",
+      "name": "axe-core",
+      "description": "Deque axe-core accessibility testing rules",
+      "publisher": "Deque Systems",
+      "version": "4.8"
+    },
+    {
+      "@id": "rules/siteimprove.jsonld",
+      "name": "SiteImprove Alfa",
+      "description": "SiteImprove Alfa accessibility rules",
+      "publisher": "SiteImprove",
+      "version": "0.70"
+    }
+  ],
+  
+  "documentation": [
+    {
+      "@id": "docs/index.md",
+      "name": "Quick Reference",
+      "description": "Overview and quick reference guide"
+    },
+    {
+      "@id": "docs/llm-usage-examples.md",
+      "name": "LLM Usage Examples",
+      "description": "Detailed examples for using standards with LLMs"
+    },
+    {
+      "@id": "CONTRIBUTING.md",
+      "name": "Contributing Guide",
+      "description": "Guidelines for contributing to the project"
+    }
+  ],
+  
+  "keywords": [
+    "accessibility",
+    "wcag",
+    "aria",
+    "json-ld",
+    "linked-data",
+    "llm",
+    "ai",
+    "w3c",
+    "semantic-web"
+  ]
+}

@@ -1,0 +1,66 @@
+name: Monitor W3C Standards
+
+on:
+  schedule:
+    # Run every Monday at 08:00 UTC
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+jobs:
+  check-standards:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Check W3C standards
+        run: |
+          python scripts/fetch-standards.py
+      
+      - name: Check axe-core rules
+        run: |
+          python scripts/fetch-axe-rules.py
+      
+      - name: Upload monitoring reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: monitoring-reports
+          path: monitoring/
+      
+      - name: Create issue if changes detected
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            
+            let body = '## W3C Standards Update Detected\n\n';
+            body += 'Automated monitoring has detected changes in W3C accessibility standards.\n\n';
+            body += '### Actions Required\n';
+            body += '1. Review the monitoring reports in the workflow artifacts\n';
+            body += '2. Update the corresponding JSON-LD files if needed\n';
+            body += '3. Run validation: `python scripts/validate.py`\n';
+            body += '4. Close this issue once updates are complete\n\n';
+            body += `Workflow run: ${context.payload.repository.html_url}/actions/runs/${context.runId}`;
+            
+            github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '🔔 W3C Standards Update Detected',
+              body: body,
+              labels: ['monitoring', 'standards-update']
+            });

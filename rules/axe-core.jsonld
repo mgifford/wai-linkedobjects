@@ -1,0 +1,379 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://github.com/dequelabs/axe-core",
+  "@type": "Standard",
+  "identifier": "axe-core",
+  "title": "axe-core Accessibility Rules",
+  "version": "4.8",
+  "date": "2024-01-15",
+  "publisher": "Deque Systems",
+  "url": "https://github.com/dequelabs/axe-core",
+  "description": "Accessibility rules engine for automated testing of web applications",
+  
+  "rules": [
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/button-name.json",
+      "@type": "Rule",
+      "ruleId": "button-name",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag412", "section508", "ACT"],
+      "description": "Ensures buttons have discernible text",
+      "help": "Buttons must have discernible text",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#button",
+        "https://html.spec.whatwg.org/#the-button-element"
+      ],
+      "enabled": true,
+      "actRules": ["97a4e1"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/image-alt.json",
+      "@type": "Rule",
+      "ruleId": "image-alt",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag111", "section508", "ACT"],
+      "description": "Ensures <img> elements have alternate text or a role of none or presentation",
+      "help": "Images must have alternate text",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#non-text-content"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-alt-attribute",
+        "https://html.spec.whatwg.org/#the-img-element"
+      ],
+      "enabled": true,
+      "actRules": ["23a2a8"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/label.json",
+      "@type": "Rule",
+      "ruleId": "label",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag412", "wcag131", "section508"],
+      "description": "Ensures every form element has a label",
+      "help": "Form elements must have labels",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value",
+        "https://www.w3.org/TR/WCAG22/#info-and-relationships",
+        "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-label-element",
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-label",
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/link-name.json",
+      "@type": "Rule",
+      "ruleId": "link-name",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag412", "wcag244", "section508", "ACT"],
+      "description": "Ensures links have discernible text",
+      "help": "Links must have discernible text",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value",
+        "https://www.w3.org/TR/WCAG22/#link-purpose-in-context"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-a-element",
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-label"
+      ],
+      "enabled": true,
+      "actRules": ["c487ae"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/color-contrast.json",
+      "@type": "Rule",
+      "ruleId": "color-contrast",
+      "impact": "serious",
+      "tags": ["wcag2aa", "wcag143"],
+      "description": "Ensures the contrast between foreground and background colors meets WCAG 2 AA contrast ratio thresholds",
+      "help": "Elements must have sufficient color contrast",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#contrast-minimum"
+      ],
+      "enabled": true,
+      "bestPractice": false
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/document-title.json",
+      "@type": "Rule",
+      "ruleId": "document-title",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag242", "ACT"],
+      "description": "Ensures each HTML document contains a non-empty <title> element",
+      "help": "Documents must have <title> element to aid in navigation",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#page-titled"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-title-element"
+      ],
+      "enabled": true,
+      "actRules": ["2779a5"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/html-has-lang.json",
+      "@type": "Rule",
+      "ruleId": "html-has-lang",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag311", "ACT"],
+      "description": "Ensures every HTML document has a lang attribute",
+      "help": "<html> element must have a lang attribute",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#language-of-page"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-lang-and-xml:lang-attributes"
+      ],
+      "enabled": true,
+      "actRules": ["b5c3f8"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/html-lang-valid.json",
+      "@type": "Rule",
+      "ruleId": "html-lang-valid",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag311", "ACT"],
+      "description": "Ensures the lang attribute of the <html> element has a valid value",
+      "help": "<html> element must have a valid value for the lang attribute",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#language-of-page"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-lang-and-xml:lang-attributes"
+      ],
+      "enabled": true,
+      "actRules": ["bf051a"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/aria-allowed-attr.json",
+      "@type": "Rule",
+      "ruleId": "aria-allowed-attr",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag412"],
+      "description": "Ensures ARIA attributes are allowed for an element's role",
+      "help": "Elements must only use allowed ARIA attributes",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#role"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/aria-required-attr.json",
+      "@type": "Rule",
+      "ruleId": "aria-required-attr",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag412"],
+      "description": "Ensures elements with ARIA roles have all required ARIA attributes",
+      "help": "Required ARIA attributes must be provided",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#role"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/aria-valid-attr.json",
+      "@type": "Rule",
+      "ruleId": "aria-valid-attr",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag412"],
+      "description": "Ensures attributes that begin with aria- are valid ARIA attributes",
+      "help": "ARIA attributes must conform to valid names",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/aria-valid-attr-value.json",
+      "@type": "Rule",
+      "ruleId": "aria-valid-attr-value",
+      "impact": "critical",
+      "tags": ["wcag2a", "wcag412"],
+      "description": "Ensures all ARIA attributes have valid values",
+      "help": "ARIA attributes must conform to valid values",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/bypass.json",
+      "@type": "Rule",
+      "ruleId": "bypass",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag241", "section508"],
+      "description": "Ensures each page has at least one mechanism for a user to bypass navigation and jump straight to the content",
+      "help": "Page must have means to bypass repeated blocks",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#bypass-blocks"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#landmark",
+        "https://html.spec.whatwg.org/#the-main-element"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/duplicate-id-active.json",
+      "@type": "Rule",
+      "ruleId": "duplicate-id-active",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag412"],
+      "description": "Ensures every id attribute value of active elements is unique",
+      "help": "IDs of active elements must be unique",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-id-attribute"
+      ],
+      "enabled": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/focus-order-semantics.json",
+      "@type": "Rule",
+      "ruleId": "focus-order-semantics",
+      "impact": "minor",
+      "tags": ["wcag2a", "wcag241", "experimental"],
+      "description": "Ensures elements in the focus order have a role appropriate for interactive content",
+      "help": "Elements in the focus order should have an appropriate role",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#keyboard"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-tabindex-attribute",
+        "https://www.w3.org/TR/wai-aria-1.2/#role"
+      ],
+      "enabled": false,
+      "bestPractice": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/heading-order.json",
+      "@type": "Rule",
+      "ruleId": "heading-order",
+      "impact": "moderate",
+      "tags": ["best-practice"],
+      "description": "Ensures the order of headings is semantically correct",
+      "help": "Heading levels should only increase by one",
+      "wcagCriteria": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements",
+        "https://www.w3.org/TR/WCAG22/#info-and-relationships"
+      ],
+      "enabled": true,
+      "bestPractice": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/landmark-one-main.json",
+      "@type": "Rule",
+      "ruleId": "landmark-one-main",
+      "impact": "moderate",
+      "tags": ["best-practice"],
+      "description": "Ensures the document has a main landmark",
+      "help": "Document should have one main landmark",
+      "wcagCriteria": [],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#main",
+        "https://html.spec.whatwg.org/#the-main-element"
+      ],
+      "enabled": true,
+      "bestPractice": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/region.json",
+      "@type": "Rule",
+      "ruleId": "region",
+      "impact": "moderate",
+      "tags": ["best-practice"],
+      "description": "Ensures all page content is contained by landmarks",
+      "help": "All page content should be contained by landmarks",
+      "wcagCriteria": [],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#landmark",
+        "https://www.w3.org/TR/WCAG22/#bypass-blocks"
+      ],
+      "enabled": true,
+      "bestPractice": true
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/aria-input-field-name.json",
+      "@type": "Rule",
+      "ruleId": "aria-input-field-name",
+      "impact": "serious",
+      "tags": ["wcag2a", "wcag412", "ACT"],
+      "description": "Ensures every ARIA input field has an accessible name",
+      "help": "ARIA input fields must have an accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#textbox",
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-label"
+      ],
+      "enabled": true,
+      "actRules": ["e086e5"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/autocomplete-valid.json",
+      "@type": "Rule",
+      "ruleId": "autocomplete-valid",
+      "impact": "serious",
+      "tags": ["wcag21aa", "wcag135", "ACT"],
+      "description": "Ensure the autocomplete attribute is correct and suitable for the form field",
+      "help": "autocomplete attribute must be used correctly",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#identify-input-purpose"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#autofill"
+      ],
+      "enabled": true,
+      "actRules": ["73f2c2"]
+    },
+    {
+      "@id": "https://github.com/dequelabs/axe-core/blob/develop/lib/rules/target-size.json",
+      "@type": "Rule",
+      "ruleId": "target-size",
+      "impact": "serious",
+      "tags": ["wcag22aa", "wcag258", "experimental"],
+      "description": "Ensures touch targets have sufficient size and spacing",
+      "help": "All clickable targets should be large enough to interact with",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#target-size-minimum"
+      ],
+      "enabled": false,
+      "bestPractice": false,
+      "note": "Experimental rule for WCAG 2.2"
+    }
+  ],
+  
+  "metadata": {
+    "extractedDate": "2024-02-24",
+    "totalRules": 21,
+    "enabledRules": 19,
+    "experimentalRules": 2,
+    "bestPracticeRules": 4,
+    "impactLevels": ["critical", "serious", "moderate", "minor"],
+    "wcagVersions": ["2.0", "2.1", "2.2"],
+    "source": "https://github.com/dequelabs/axe-core"
+  }
+}
