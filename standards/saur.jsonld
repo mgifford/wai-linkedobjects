@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/saur/",
+  "@type": "Standard",
+  "identifier": "SAUR",
+  "title": "Synchronization Accessibility User Requirements",
+  "url": "https://www.w3.org/TR/saur/",
+  "description": "User requirements for accessible multimedia synchronization",
+  "publisher": "W3C"
+}

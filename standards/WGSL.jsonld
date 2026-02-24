@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/WGSL/",
+  "@type": "Standard",
+  "identifier": "WGSL",
+  "title": "WebGPU Shading Language",
+  "url": "https://www.w3.org/TR/WGSL/",
+  "description": "Shading language for WebGPU",
+  "publisher": "W3C"
+}

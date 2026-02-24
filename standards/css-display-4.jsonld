@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/css-display-4/",
+  "@type": "Standard",
+  "identifier": "CSS Display 4",
+  "title": "CSS Display Module Level 4",
+  "url": "https://www.w3.org/TR/css-display-4/",
+  "description": "CSS display property and box generation",
+  "publisher": "W3C",
+  "version": "4"
+}

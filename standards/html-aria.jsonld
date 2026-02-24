@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/html-aria/",
+  "@type": "Standard",
+  "identifier": "HTML-ARIA",
+  "title": "ARIA in HTML",
+  "url": "https://www.w3.org/TR/html-aria/",
+  "description": "Practical guide for using ARIA with HTML",
+  "publisher": "W3C"
+}

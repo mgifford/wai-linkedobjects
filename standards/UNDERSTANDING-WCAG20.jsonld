@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/",
+  "@type": "Standard",
+  "identifier": "Understanding WCAG 2.0",
+  "title": "Understanding WCAG 2.0",
+  "url": "https://www.w3.org/TR/UNDERSTANDING-WCAG20/",
+  "description": "Detailed guidance for understanding WCAG 2.0",
+  "publisher": "W3C"
+}

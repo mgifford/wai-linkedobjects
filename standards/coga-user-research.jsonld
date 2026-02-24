@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/coga-user-research/",
+  "@type": "Standard",
+  "identifier": "COGA Research",
+  "title": "Cognitive Accessibility User Research",
+  "url": "https://www.w3.org/TR/coga-user-research/",
+  "description": "User research findings for cognitive accessibility",
+  "publisher": "W3C"
+}

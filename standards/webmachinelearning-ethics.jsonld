@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/webmachinelearning-ethics/",
+  "@type": "Standard",
+  "identifier": "webmachinelearning-ethics",
+  "title": "Ethical Principles for Web Machine Learning",
+  "url": "https://www.w3.org/TR/webmachinelearning-ethics/",
+  "description": "Ethical considerations for implementing machine learning on the Web",
+  "publisher": "W3C"
+}

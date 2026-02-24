@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/coga-safety/",
+  "@type": "Standard",
+  "identifier": "COGA Safety",
+  "title": "Making Content Usable for People with Cognitive and Learning Disabilities: Safety",
+  "url": "https://www.w3.org/TR/coga-safety/",
+  "description": "Safety considerations for cognitive accessibility",
+  "publisher": "W3C"
+}

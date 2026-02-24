@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/webgpu/",
+  "@type": "Standard",
+  "identifier": "WebGPU",
+  "title": "WebGPU",
+  "url": "https://www.w3.org/TR/webgpu/",
+  "description": "API for GPU acceleration on the Web",
+  "publisher": "W3C"
+}

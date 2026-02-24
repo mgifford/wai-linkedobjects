@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/coga-research-modules/",
+  "@type": "Standard",
+  "identifier": "COGA Research",
+  "title": "COGA Research Modules",
+  "url": "https://www.w3.org/TR/coga-research-modules/",
+  "description": "Research modules for cognitive accessibility",
+  "publisher": "W3C"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/act-rules-format-1.1/",
+  "@type": "Standard",
+  "identifier": "ACT Rules 1.1",
+  "title": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
+  "url": "https://www.w3.org/TR/act-rules-format-1.1/",
+  "description": "Format for writing accessibility test rules",
+  "publisher": "W3C",
+  "version": "1.1"
+}

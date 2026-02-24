@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/graphics-aam-1.0/",
+  "@type": "Standard",
+  "identifier": "Graphics-AAM 1.0",
+  "title": "Graphics Accessibility API Mappings",
+  "url": "https://www.w3.org/TR/graphics-aam-1.0/",
+  "description": "Defines how graphics document roles map to accessibility APIs",
+  "publisher": "W3C",
+  "version": "1.0"
+}

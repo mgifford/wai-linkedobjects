@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/ctaur/",
+  "@type": "Standard",
+  "identifier": "CTAUR",
+  "title": "Collaboration Tools Accessibility User Requirements",
+  "url": "https://www.w3.org/TR/ctaur/",
+  "description": "User requirements for accessible collaboration tools",
+  "publisher": "W3C"
+}

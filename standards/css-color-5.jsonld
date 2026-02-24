@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/css-color-5/",
+  "@type": "Standard",
+  "identifier": "CSS Color 5",
+  "title": "CSS Color Module Level 5",
+  "url": "https://www.w3.org/TR/css-color-5/",
+  "description": "CSS color values and properties",
+  "publisher": "W3C",
+  "version": "5"
+}

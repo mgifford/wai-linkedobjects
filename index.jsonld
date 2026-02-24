@@ -10,7 +10,6 @@
   "dateCreated": "2024-02-24",
   "license": "MIT",
   "url": "https://github.com/mgifford/w3c-linkedobjects",
-  
   "standards": [
     {
       "@id": "standards/wcag-2.2.jsonld",
@@ -27,9 +26,356 @@
       "publisher": "W3C",
       "status": "recommendation",
       "datePublished": "2023-06-06"
+    },
+    {
+      "@id": "standards/ethical-web-principles.jsonld",
+      "name": "Ethical Web Principles",
+      "description": "Ethical principles for the Web",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/webmachinelearning-ethics.jsonld",
+      "name": "Ethical Principles for Web Machine Learning",
+      "description": "Ethical considerations for implementing machine learning on the Web",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/digital-credentials.jsonld",
+      "name": "Digital Credentials API",
+      "description": "API for requesting and presenting digital credentials",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/did-1.1.jsonld",
+      "name": "Decentralized Identifiers (DIDs) v1.1",
+      "description": "Decentralized Identifiers (DIDs) core data model and architecture",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/mathml4.jsonld",
+      "name": "Mathematical Markup Language (MathML) Version 4.0",
+      "description": "Mathematical Markup Language for encoding mathematical notation",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/mediaqueries-5.jsonld",
+      "name": "Media Queries Level 5",
+      "description": "CSS Media Queries defining media-dependent stylesheets",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/selectors-5.jsonld",
+      "name": "Selectors Level 5",
+      "description": "CSS Selectors for pattern matching against element trees",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/svg-aam-1.0.jsonld",
+      "name": "SVG Accessibility API Mappings",
+      "description": "Defines how SVG features map to accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/core-aam-1.2.jsonld",
+      "name": "Core Accessibility API Mappings 1.2",
+      "description": "Defines how user agents map accessibility tree semantics to platform accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/html-aam-1.0.jsonld",
+      "name": "HTML Accessibility API Mappings 1.0",
+      "description": "Defines how HTML elements map to accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/accname-1.2.jsonld",
+      "name": "Accessible Name and Description Computation 1.2",
+      "description": "Defines how user agents compute accessible names and descriptions",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/html-aria.jsonld",
+      "name": "ARIA in HTML",
+      "description": "Practical guide for using ARIA with HTML",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/dpub-aam-1.1.jsonld",
+      "name": "Digital Publishing Accessibility API Mappings 1.1",
+      "description": "Defines how digital publishing roles map to accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/dpub-aria-1.1.jsonld",
+      "name": "Digital Publishing WAI-ARIA Module 1.1",
+      "description": "ARIA extension for digital publishing",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wai-aria-1.3.jsonld",
+      "name": "Accessible Rich Internet Applications (WAI-ARIA) 1.3",
+      "description": "Defines semantics and accessibility features for web applications",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/accname-1.1.jsonld",
+      "name": "Accessible Name and Description Computation 1.1",
+      "description": "Defines how user agents compute accessible names and descriptions",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/graphics-aam-1.0.jsonld",
+      "name": "Graphics Accessibility API Mappings",
+      "description": "Defines how graphics document roles map to accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/graphics-aria-1.0.jsonld",
+      "name": "WAI-ARIA Graphics Module",
+      "description": "ARIA extension for graphics and diagrams",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wai-aria-1.1.jsonld",
+      "name": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
+      "description": "Defines semantics and accessibility features for web applications",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/core-aam-1.1.jsonld",
+      "name": "Core Accessibility API Mappings 1.1",
+      "description": "Defines how user agents map accessibility tree semantics to platform accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/dpub-aam-1.0.jsonld",
+      "name": "Digital Publishing Accessibility API Mappings 1.0",
+      "description": "Defines how digital publishing roles map to accessibility APIs",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/dpub-aria-1.0.jsonld",
+      "name": "Digital Publishing WAI-ARIA Module 1.0",
+      "description": "ARIA extension for digital publishing",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wai-aria-implementation.jsonld",
+      "name": "WAI-ARIA 1.2 Implementation Guide",
+      "description": "Implementation guidance for WAI-ARIA features",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/act-rules-format-1.1.jsonld",
+      "name": "Accessibility Conformance Testing (ACT) Rules Format 1.1",
+      "description": "Format for writing accessibility test rules",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/act-rules-aspects.jsonld",
+      "name": "ACT Rules Aspects",
+      "description": "Distinct parts of a test subject for ACT Rules",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/coga-research-modules.jsonld",
+      "name": "COGA Research Modules",
+      "description": "Research modules for cognitive accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/coga-safety.jsonld",
+      "name": "Making Content Usable for People with Cognitive and Learning Disabilities: Safety",
+      "description": "Safety considerations for cognitive accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/coga-sdm.jsonld",
+      "name": "Supplemental Guidance to WCAG 2 for People with Cognitive and Learning Disabilities",
+      "description": "Cognitive accessibility guidance supplementing WCAG",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/coga-voice.jsonld",
+      "name": "Making Content Usable for People with Cognitive and Learning Disabilities: Voice",
+      "description": "Voice interface considerations for cognitive accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/saur.jsonld",
+      "name": "Synchronization Accessibility User Requirements",
+      "description": "User requirements for accessible multimedia synchronization",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/low-vision-needs.jsonld",
+      "name": "Accessibility Requirements for People with Low Vision",
+      "description": "Requirements for users with low vision",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/media-accessibility-reqs.jsonld",
+      "name": "Media Accessibility User Requirements",
+      "description": "User requirements for accessible media",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/coga-user-research.jsonld",
+      "name": "Cognitive Accessibility User Research",
+      "description": "User research findings for cognitive accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wcag-em-2.jsonld",
+      "name": "Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 2.0",
+      "description": "Methodology for evaluating website accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wcag2ict-22.jsonld",
+      "name": "Guidance on Applying WCAG 2.2 to Non-Web Information and Communications Technologies",
+      "description": "Applying WCAG to non-web ICT",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/maturity-model.jsonld",
+      "name": "W3C Accessibility Maturity Model",
+      "description": "Model for assessing organizational accessibility maturity",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wcag-3.0.jsonld",
+      "name": "W3C Accessibility Guidelines (WCAG) 3.0",
+      "description": "Next generation of accessibility guidelines",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wcag2mobile-22.jsonld",
+      "name": "Mobile Accessibility: How WCAG 2.2 Applies to Mobile",
+      "description": "Guidance on applying WCAG to mobile",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/ctaur.jsonld",
+      "name": "Collaboration Tools Accessibility User Requirements",
+      "description": "User requirements for accessible collaboration tools",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wcag-3.0-requirements.jsonld",
+      "name": "Requirements for WCAG 3.0",
+      "description": "Requirements document for developing WCAG 3.0",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/UNDERSTANDING-WCAG20.jsonld",
+      "name": "Understanding WCAG 2.0",
+      "description": "Detailed guidance for understanding WCAG 2.0",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/coga-usable.jsonld",
+      "name": "Making Content Usable for People with Cognitive and Learning Disabilities",
+      "description": "Design patterns for cognitive accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/accessibility-conformance-challenges.jsonld",
+      "name": "Challenges with Accessibility Guidelines Conformance and Testing",
+      "description": "Analysis of accessibility conformance challenges",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/WCAG-EM.jsonld",
+      "name": "Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 1.0",
+      "description": "Methodology for evaluating website accessibility",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/wcag2ict-20.jsonld",
+      "name": "Guidance on Applying WCAG 2.0 to Non-Web ICT",
+      "description": "Applying WCAG 2.0 to non-web technologies",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/html.jsonld",
+      "name": "HTML Living Standard",
+      "description": "Core HTML specification",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/html-bidi.jsonld",
+      "name": "Requirements for Bidi in HTML",
+      "description": "Bidirectional text requirements for HTML",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/html5-author.jsonld",
+      "name": "HTML5: Edition for Web Authors",
+      "description": "HTML5 specification for web authors",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/offline-webapps.jsonld",
+      "name": "Offline Web Applications",
+      "description": "Specification for offline web applications",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/html-design-principles.jsonld",
+      "name": "HTML Design Principles",
+      "description": "Core design principles for HTML",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/web-sustainability-guidelines.jsonld",
+      "name": "Web Sustainability Guidelines (WSG) 1.0",
+      "description": "Guidelines for sustainable web design and development",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/webgpu.jsonld",
+      "name": "WebGPU",
+      "description": "API for GPU acceleration on the Web",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/WGSL.jsonld",
+      "name": "WebGPU Shading Language",
+      "description": "Shading language for WebGPU",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/css-color-5.jsonld",
+      "name": "CSS Color Module Level 5",
+      "description": "CSS color values and properties",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/css-color-adjust-1.jsonld",
+      "name": "CSS Color Adjustment Module Level 1",
+      "description": "CSS properties for color adjustment",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/web-animations-2.jsonld",
+      "name": "Web Animations Level 2",
+      "description": "Model for synchronizing animations on the Web",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/css-animations-2.jsonld",
+      "name": "CSS Animations Level 2",
+      "description": "CSS animations for declarative animations",
+      "publisher": "W3C"
+    },
+    {
+      "@id": "standards/css-display-4.jsonld",
+      "name": "CSS Display Module Level 4",
+      "description": "CSS display property and box generation",
+      "publisher": "W3C"
     }
   ],
-  
   "rules": [
     {
       "@id": "rules/axe-core.jsonld",
@@ -46,7 +392,6 @@
       "version": "0.70"
     }
   ],
-  
   "documentation": [
     {
       "@id": "docs/index.md",
@@ -64,7 +409,6 @@
       "description": "Guidelines for contributing to the project"
     }
   ],
-  
   "keywords": [
     "accessibility",
     "wcag",

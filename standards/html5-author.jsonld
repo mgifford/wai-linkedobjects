@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/html5-author/",
+  "@type": "Standard",
+  "identifier": "HTML5 Author",
+  "title": "HTML5: Edition for Web Authors",
+  "url": "https://www.w3.org/TR/html5-author/",
+  "description": "HTML5 specification for web authors",
+  "publisher": "W3C"
+}

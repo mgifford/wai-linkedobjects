@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/web-animations-2/",
+  "@type": "Standard",
+  "identifier": "Web Animations 2",
+  "title": "Web Animations Level 2",
+  "url": "https://www.w3.org/TR/web-animations-2/",
+  "description": "Model for synchronizing animations on the Web",
+  "publisher": "W3C",
+  "version": "2"
+}
