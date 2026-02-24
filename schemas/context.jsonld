@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "@vocab": "https://www.w3.org/ns/earl#",
+    "schema": "http://schema.org/",
+    "wcag": "https://www.w3.org/TR/WCAG22/#",
+    "aria": "https://www.w3.org/TR/wai-aria-1.2/#",
+    "html": "https://html.spec.whatwg.org/#",
+    "css": "https://www.w3.org/Style/CSS/",
+    "axe": "https://github.com/dequelabs/axe-core/",
+    "dct": "http://purl.org/dc/terms/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    
+    "Standard": "schema:Standard",
+    "SuccessCriterion": "wcag:SuccessCriterion",
+    "Guideline": "wcag:Guideline",
+    "Principle": "wcag:Principle",
+    "Technique": "wcag:Technique",
+    "Role": "aria:Role",
+    "Property": "aria:Property",
+    "State": "aria:State",
+    "Rule": "schema:Rule",
+    
+    "identifier": "dct:identifier",
+    "title": "dct:title",
+    "description": "dct:description",
+    "date": "dct:date",
+    "version": "schema:version",
+    "url": "schema:url",
+    "source": "dct:source",
+    "publisher": "dct:publisher",
+    
+    "name": "schema:name",
+    "level": "wcag:level",
+    "conformanceLevel": "wcag:conformanceLevel",
+    "understanding": "schema:documentation",
+    "techniques": {
+      "@id": "wcag:technique",
+      "@type": "@id"
+    },
+    "relatedTo": {
+      "@id": "skos:related",
+      "@type": "@id"
+    },
+    "seeAlso": {
+      "@id": "schema:seeAlso",
+      "@type": "@id"
+    },
+    "requiredContext": "aria:requiredContext",
+    "requiredProperties": "aria:requiredProperties",
+    "supportedStates": "aria:supportedStates",
+    "inheritsFrom": {
+      "@id": "schema:subClassOf",
+      "@type": "@id"
+    },
+    
+    "ruleId": "dct:identifier",
+    "impact": "schema:riskLevel",
+    "tags": "schema:keywords",
+    "enabled": "schema:isPartOf",
+    "wcagCriteria": {
+      "@id": "wcag:relatedSuccessCriterion",
+      "@type": "@id"
+    },
+    "bestPractice": "schema:recommendedUsage",
+    
+    "checkId": "dct:identifier",
+    "category": "schema:category",
+    "severity": "schema:riskLevel"
+  }
+}

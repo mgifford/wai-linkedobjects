@@ -1,0 +1,404 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/wai-aria-1.2/",
+  "@type": "Standard",
+  "identifier": "ARIA 1.2",
+  "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.2",
+  "version": "1.2",
+  "date": "2023-06-06",
+  "publisher": "W3C",
+  "url": "https://www.w3.org/TR/wai-aria-1.2/",
+  "description": "WAI-ARIA describes how to add semantics and other metadata to HTML content to make controls, Ajax live regions, and other features accessible.",
+  
+  "roles": [
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#button",
+      "@type": "Role",
+      "name": "button",
+      "description": "An input that allows for user-triggered actions when clicked or pressed.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": [
+        "aria-expanded",
+        "aria-pressed"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-button-element",
+        "https://www.w3.org/TR/WCAG22/#keyboard"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#navigation",
+      "@type": "Role",
+      "name": "navigation",
+      "description": "A collection of navigational elements (usually links) for navigating the document or related documents.",
+      "category": "landmark",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-nav-element",
+        "https://www.w3.org/TR/WCAG22/#bypass-blocks"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#main",
+      "@type": "Role",
+      "name": "main",
+      "description": "The main content of a document.",
+      "category": "landmark",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-main-element",
+        "https://www.w3.org/TR/WCAG22/#bypass-blocks"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#banner",
+      "@type": "Role",
+      "name": "banner",
+      "description": "A region that contains mostly site-oriented content, rather than page-specific content.",
+      "category": "landmark",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-header-element"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#contentinfo",
+      "@type": "Role",
+      "name": "contentinfo",
+      "description": "A large perceivable region that contains information about the parent document.",
+      "category": "landmark",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-footer-element"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#complementary",
+      "@type": "Role",
+      "name": "complementary",
+      "description": "A supporting section of the document, designed to be complementary to the main content.",
+      "category": "landmark",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-aside-element"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#search",
+      "@type": "Role",
+      "name": "search",
+      "description": "A landmark region that contains a collection of items and objects that, as a whole, combine to create a search facility.",
+      "category": "landmark",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": []
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#dialog",
+      "@type": "Role",
+      "name": "dialog",
+      "description": "A dialog is an application window that is designed to interrupt the current processing of an application.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": ["aria-label", "aria-labelledby"],
+      "supportedStates": ["aria-expanded", "aria-modal"],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-dialog-element"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#alert",
+      "@type": "Role",
+      "name": "alert",
+      "description": "A type of live region with important, and usually time-sensitive, information.",
+      "category": "live-region",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": ["aria-live", "aria-atomic"],
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#error-identification"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#alertdialog",
+      "@type": "Role",
+      "name": "alertdialog",
+      "description": "A type of dialog that contains an alert message.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": ["aria-label", "aria-labelledby"],
+      "supportedStates": ["aria-expanded", "aria-modal"],
+      "inheritsFrom": "https://www.w3.org/TR/wai-aria-1.2/#alert"
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#tablist",
+      "@type": "Role",
+      "name": "tablist",
+      "description": "A list of tab elements, which are references to tabpanel elements.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": ["aria-orientation"],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#tab",
+        "https://www.w3.org/TR/wai-aria-1.2/#tabpanel"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#tab",
+      "@type": "Role",
+      "name": "tab",
+      "description": "A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.",
+      "category": "widget",
+      "requiredContext": ["tablist"],
+      "requiredProperties": ["aria-selected"],
+      "supportedStates": ["aria-expanded"],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#tablist",
+        "https://www.w3.org/TR/wai-aria-1.2/#tabpanel"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#tabpanel",
+      "@type": "Role",
+      "name": "tabpanel",
+      "description": "A container for the resources associated with a tab.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": ["aria-labelledby"],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#tab"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#menu",
+      "@type": "Role",
+      "name": "menu",
+      "description": "A type of widget that offers a list of choices to the user.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": ["aria-orientation"],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#menuitem"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#menuitem",
+      "@type": "Role",
+      "name": "menuitem",
+      "description": "An option in a set of choices contained by a menu or menubar.",
+      "category": "widget",
+      "requiredContext": ["menu", "menubar"],
+      "requiredProperties": [],
+      "supportedStates": []
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#checkbox",
+      "@type": "Role",
+      "name": "checkbox",
+      "description": "A checkable input that has three possible values: true, false, or mixed.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": ["aria-checked"],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#checkbox-state-(type=checkbox)"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#radio",
+      "@type": "Role",
+      "name": "radio",
+      "description": "A checkable input in a group of elements with the same role, only one of which can be checked at a time.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": ["aria-checked"],
+      "supportedStates": [],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#radio-button-state-(type=radio)",
+        "https://www.w3.org/TR/wai-aria-1.2/#radiogroup"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#radiogroup",
+      "@type": "Role",
+      "name": "radiogroup",
+      "description": "A group of radio buttons.",
+      "category": "widget",
+      "requiredContext": [],
+      "requiredProperties": [],
+      "supportedStates": ["aria-orientation"],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#radio"
+      ]
+    }
+  ],
+  
+  "properties": [
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-label",
+      "@type": "Property",
+      "name": "aria-label",
+      "description": "Defines a string value that labels the current element.",
+      "valueType": "string",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#non-text-content",
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby",
+      "@type": "Property",
+      "name": "aria-labelledby",
+      "description": "Identifies the element (or elements) that labels the current element.",
+      "valueType": "id-reference",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#non-text-content",
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-describedby",
+      "@type": "Property",
+      "name": "aria-describedby",
+      "description": "Identifies the element (or elements) that describes the object.",
+      "valueType": "id-reference",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#info-and-relationships"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-hidden",
+      "@type": "State",
+      "name": "aria-hidden",
+      "description": "Indicates whether the element is exposed to an accessibility API.",
+      "valueType": "boolean",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-expanded",
+      "@type": "State",
+      "name": "aria-expanded",
+      "description": "Indicates whether a grouping element owned or controlled by this element is expanded or collapsed.",
+      "valueType": "boolean",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-pressed",
+      "@type": "State",
+      "name": "aria-pressed",
+      "description": "Indicates the current pressed state of toggle buttons.",
+      "valueType": "tristate",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-selected",
+      "@type": "State",
+      "name": "aria-selected",
+      "description": "Indicates the current selected state of various widgets.",
+      "valueType": "boolean",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-checked",
+      "@type": "State",
+      "name": "aria-checked",
+      "description": "Indicates the current checked state of checkboxes, radio buttons, and other widgets.",
+      "valueType": "tristate",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-invalid",
+      "@type": "State",
+      "name": "aria-invalid",
+      "description": "Indicates the entered value does not conform to the format expected by the application.",
+      "valueType": "token",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#error-identification"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-errormessage",
+      "@type": "Property",
+      "name": "aria-errormessage",
+      "description": "Identifies the element that provides an error message for an object.",
+      "valueType": "id-reference",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#error-identification",
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-invalid"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-required",
+      "@type": "Property",
+      "name": "aria-required",
+      "description": "Indicates that user input is required on the element before a form may be submitted.",
+      "valueType": "boolean",
+      "relatedTo": [
+        "https://www.w3.org/TR/WCAG22/#labels-or-instructions",
+        "https://html.spec.whatwg.org/#the-required-attribute"
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-live",
+      "@type": "Property",
+      "name": "aria-live",
+      "description": "Indicates that an element will be updated, and describes the types of updates the user agents, assistive technologies, and user can expect.",
+      "valueType": "token",
+      "allowedValues": ["off", "polite", "assertive"]
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-atomic",
+      "@type": "Property",
+      "name": "aria-atomic",
+      "description": "Indicates whether assistive technologies will present all, or only parts of, the changed region.",
+      "valueType": "boolean"
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-modal",
+      "@type": "Property",
+      "name": "aria-modal",
+      "description": "Indicates whether an element is modal when displayed.",
+      "valueType": "boolean"
+    },
+    {
+      "@id": "https://www.w3.org/TR/wai-aria-1.2/#aria-current",
+      "@type": "Property",
+      "name": "aria-current",
+      "description": "Indicates the element that represents the current item within a container or set of related elements.",
+      "valueType": "token",
+      "allowedValues": ["page", "step", "location", "date", "time", "true", "false"]
+    }
+  ],
+  
+  "metadata": {
+    "extractedDate": "2024-02-24",
+    "totalRoles": 18,
+    "totalProperties": 15,
+    "categories": ["widget", "landmark", "live-region", "document-structure"]
+  }
+}

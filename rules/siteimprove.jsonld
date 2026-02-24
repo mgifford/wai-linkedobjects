@@ -1,0 +1,299 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://alfa.siteimprove.com/",
+  "@type": "Standard",
+  "identifier": "siteimprove-alfa",
+  "title": "SiteImprove Alfa Accessibility Rules",
+  "version": "0.70",
+  "date": "2024-01-20",
+  "publisher": "SiteImprove",
+  "url": "https://alfa.siteimprove.com/",
+  "description": "Open-source accessibility conformance testing rules from SiteImprove",
+  
+  "rules": [
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r1",
+      "@type": "Rule",
+      "checkId": "sia-r1",
+      "category": "aria",
+      "severity": "critical",
+      "description": "ARIA state or property is allowed for the role",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#role"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r2",
+      "@type": "Rule",
+      "checkId": "sia-r2",
+      "category": "aria",
+      "severity": "critical",
+      "description": "ARIA state or property has valid value",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r3",
+      "@type": "Rule",
+      "checkId": "sia-r3",
+      "category": "aria",
+      "severity": "critical",
+      "description": "ID referenced by ARIA property exists",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r4",
+      "@type": "Rule",
+      "checkId": "sia-r4",
+      "category": "aria",
+      "severity": "critical",
+      "description": "Element with role has required states and properties",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#requiredState"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r11",
+      "@type": "Rule",
+      "checkId": "sia-r11",
+      "category": "text-alternative",
+      "severity": "critical",
+      "description": "Button has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-button-element",
+        "https://www.w3.org/TR/wai-aria-1.2/#button"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r14",
+      "@type": "Rule",
+      "checkId": "sia-r14",
+      "category": "text-alternative",
+      "severity": "critical",
+      "description": "Element has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r17",
+      "@type": "Rule",
+      "checkId": "sia-r17",
+      "category": "text-alternative",
+      "severity": "critical",
+      "description": "Image has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#non-text-content"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-img-element",
+        "https://html.spec.whatwg.org/#the-alt-attribute"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r62",
+      "@type": "Rule",
+      "checkId": "sia-r62",
+      "category": "text-alternative",
+      "severity": "critical",
+      "description": "Link has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#name-role-value",
+        "https://www.w3.org/TR/WCAG22/#link-purpose-in-context"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-a-element"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r12",
+      "@type": "Rule",
+      "checkId": "sia-r12",
+      "category": "keyboard",
+      "severity": "critical",
+      "description": "Element in sequential focus order has visible focus",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#focus-visible"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/Style/CSS/specs#css-ui"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r73",
+      "@type": "Rule",
+      "checkId": "sia-r73",
+      "category": "keyboard",
+      "severity": "critical",
+      "description": "Element is keyboard accessible",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#keyboard"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-tabindex-attribute"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r24",
+      "@type": "Rule",
+      "checkId": "sia-r24",
+      "category": "semantics",
+      "severity": "serious",
+      "description": "Element has valid lang attribute",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#language-of-page"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-lang-and-xml:lang-attributes"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r57",
+      "@type": "Rule",
+      "checkId": "sia-r57",
+      "category": "semantics",
+      "severity": "serious",
+      "description": "Heading has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#info-and-relationships"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r64",
+      "@type": "Rule",
+      "checkId": "sia-r64",
+      "category": "structure",
+      "severity": "serious",
+      "description": "Document has a landmark",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#bypass-blocks"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#landmark"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r66",
+      "@type": "Rule",
+      "checkId": "sia-r66",
+      "category": "forms",
+      "severity": "critical",
+      "description": "Form field has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#labels-or-instructions",
+        "https://www.w3.org/TR/WCAG22/#name-role-value"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-label-element"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r68",
+      "@type": "Rule",
+      "checkId": "sia-r68",
+      "category": "forms",
+      "severity": "serious",
+      "description": "Element with explicit label has accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-label-element"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r69",
+      "@type": "Rule",
+      "checkId": "sia-r69",
+      "category": "color",
+      "severity": "serious",
+      "description": "Text has minimum contrast",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#contrast-minimum"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r83",
+      "@type": "Rule",
+      "checkId": "sia-r83",
+      "category": "structure",
+      "severity": "serious",
+      "description": "Heading has non-empty accessible name",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#info-and-relationships"
+      ],
+      "relatedTo": [
+        "https://html.spec.whatwg.org/#the-h1,-h2,-h3,-h4,-h5,-and-h6-elements"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r87",
+      "@type": "Rule",
+      "checkId": "sia-r87",
+      "category": "structure",
+      "severity": "critical",
+      "description": "Focusable element has no keyboard trap via standard navigation",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#no-keyboard-trap"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r90",
+      "@type": "Rule",
+      "checkId": "sia-r90",
+      "category": "forms",
+      "severity": "serious",
+      "description": "Form field has accessible description",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#labels-or-instructions"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/TR/wai-aria-1.2/#aria-describedby"
+      ]
+    },
+    {
+      "@id": "https://alfa.siteimprove.com/rules/sia-r92",
+      "@type": "Rule",
+      "checkId": "sia-r92",
+      "category": "color",
+      "severity": "serious",
+      "description": "Text spacing can be adjusted",
+      "wcagCriteria": [
+        "https://www.w3.org/TR/WCAG22/#text-spacing"
+      ],
+      "relatedTo": [
+        "https://www.w3.org/Style/CSS/specs#css-text"
+      ]
+    }
+  ],
+  
+  "metadata": {
+    "extractedDate": "2024-02-24",
+    "totalRules": 20,
+    "categories": ["aria", "text-alternative", "keyboard", "semantics", "structure", "forms", "color"],
+    "severityLevels": ["critical", "serious", "moderate"],
+    "source": "https://alfa.siteimprove.com/",
+    "note": "This is a subset of SiteImprove Alfa rules. Full rule set available at https://alfa.siteimprove.com/rules"
+  }
+}
