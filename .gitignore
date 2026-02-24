@@ -51,3 +51,6 @@ temp/
 
 # Cache
 .cache/
+
+# Monitoring runtime data
+monitoring/
