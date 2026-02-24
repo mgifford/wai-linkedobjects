@@ -125,6 +125,12 @@ Example:
 }
 ```
 
+## Documentation
+
+- **[Document Relationships](docs/linked-relationships.md)** - Explains how ATAG, WCAG, and ARIA link together
+- **[LLM Usage Examples](docs/llm-usage-examples.md)** - Detailed prompt patterns and examples
+- **[Quick Reference](docs/index.md)** - Repository map and getting started guide
+
 ## Related Projects
 
 - [wai-yaml-ld](https://github.com/mgifford/wai-yaml-ld) - YAML-based version of this project
