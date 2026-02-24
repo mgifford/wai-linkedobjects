@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/wcag-3.0-requirements/",
+  "@type": "Standard",
+  "identifier": "WCAG 3.0 Requirements",
+  "title": "Requirements for WCAG 3.0",
+  "url": "https://www.w3.org/TR/wcag-3.0-requirements/",
+  "description": "Requirements document for developing WCAG 3.0",
+  "publisher": "W3C"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/wai-aria-1.1/",
+  "@type": "Standard",
+  "identifier": "ARIA 1.1",
+  "title": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
+  "url": "https://www.w3.org/TR/wai-aria-1.1/",
+  "description": "Defines semantics and accessibility features for web applications",
+  "publisher": "W3C",
+  "version": "1.1"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/wcag-em-2/",
+  "@type": "Standard",
+  "identifier": "WCAG-EM 2.0",
+  "title": "Website Accessibility Conformance Evaluation Methodology (WCAG-EM) 2.0",
+  "url": "https://www.w3.org/TR/wcag-em-2/",
+  "description": "Methodology for evaluating website accessibility",
+  "publisher": "W3C",
+  "version": "2.0"
+}

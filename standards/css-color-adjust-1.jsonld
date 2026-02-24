@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/css-color-adjust-1/",
+  "@type": "Standard",
+  "identifier": "CSS Color Adjust 1",
+  "title": "CSS Color Adjustment Module Level 1",
+  "url": "https://www.w3.org/TR/css-color-adjust-1/",
+  "description": "CSS properties for color adjustment",
+  "publisher": "W3C",
+  "version": "1"
+}

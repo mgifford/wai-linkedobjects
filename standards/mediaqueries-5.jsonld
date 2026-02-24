@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/mediaqueries-5/",
+  "@type": "Standard",
+  "identifier": "Media Queries 5",
+  "title": "Media Queries Level 5",
+  "url": "https://www.w3.org/TR/mediaqueries-5/",
+  "description": "CSS Media Queries defining media-dependent stylesheets",
+  "publisher": "W3C",
+  "version": "5"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/dpub-aria-1.0/",
+  "@type": "Standard",
+  "identifier": "DPUB-ARIA 1.0",
+  "title": "Digital Publishing WAI-ARIA Module 1.0",
+  "url": "https://www.w3.org/TR/dpub-aria-1.0/",
+  "description": "ARIA extension for digital publishing",
+  "publisher": "W3C",
+  "version": "1.0"
+}

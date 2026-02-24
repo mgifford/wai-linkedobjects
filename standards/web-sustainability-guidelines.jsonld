@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/web-sustainability-guidelines/",
+  "@type": "Standard",
+  "identifier": "WSG 1.0",
+  "title": "Web Sustainability Guidelines (WSG) 1.0",
+  "url": "https://www.w3.org/TR/web-sustainability-guidelines/",
+  "description": "Guidelines for sustainable web design and development",
+  "publisher": "W3C",
+  "version": "1.0"
+}

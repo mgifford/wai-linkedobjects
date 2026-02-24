@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/html/",
+  "@type": "Standard",
+  "identifier": "HTML",
+  "title": "HTML Living Standard",
+  "url": "https://www.w3.org/TR/html/",
+  "description": "Core HTML specification",
+  "publisher": "W3C"
+}

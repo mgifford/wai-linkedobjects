@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/html-design-principles/",
+  "@type": "Standard",
+  "identifier": "HTML Design",
+  "title": "HTML Design Principles",
+  "url": "https://www.w3.org/TR/html-design-principles/",
+  "description": "Core design principles for HTML",
+  "publisher": "W3C"
+}

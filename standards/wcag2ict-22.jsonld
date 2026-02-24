@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/wcag2ict-22/",
+  "@type": "Standard",
+  "identifier": "WCAG2ICT 2.2",
+  "title": "Guidance on Applying WCAG 2.2 to Non-Web Information and Communications Technologies",
+  "url": "https://www.w3.org/TR/wcag2ict-22/",
+  "description": "Applying WCAG to non-web ICT",
+  "publisher": "W3C",
+  "version": "2.2"
+}

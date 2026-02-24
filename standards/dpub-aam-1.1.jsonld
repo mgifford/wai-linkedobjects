@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/dpub-aam-1.1/",
+  "@type": "Standard",
+  "identifier": "DPUB-AAM 1.1",
+  "title": "Digital Publishing Accessibility API Mappings 1.1",
+  "url": "https://www.w3.org/TR/dpub-aam-1.1/",
+  "description": "Defines how digital publishing roles map to accessibility APIs",
+  "publisher": "W3C",
+  "version": "1.1"
+}

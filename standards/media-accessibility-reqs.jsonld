@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/media-accessibility-reqs/",
+  "@type": "Standard",
+  "identifier": "MAUR",
+  "title": "Media Accessibility User Requirements",
+  "url": "https://www.w3.org/TR/media-accessibility-reqs/",
+  "description": "User requirements for accessible media",
+  "publisher": "W3C"
+}

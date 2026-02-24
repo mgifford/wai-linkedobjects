@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/graphics-aria-1.0/",
+  "@type": "Standard",
+  "identifier": "Graphics-ARIA 1.0",
+  "title": "WAI-ARIA Graphics Module",
+  "url": "https://www.w3.org/TR/graphics-aria-1.0/",
+  "description": "ARIA extension for graphics and diagrams",
+  "publisher": "W3C",
+  "version": "1.0"
+}

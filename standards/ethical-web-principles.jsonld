@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/ethical-web-principles/",
+  "@type": "Standard",
+  "identifier": "ethical-web-principles",
+  "title": "Ethical Web Principles",
+  "url": "https://www.w3.org/TR/ethical-web-principles/",
+  "description": "Ethical principles for the Web",
+  "publisher": "W3C"
+}

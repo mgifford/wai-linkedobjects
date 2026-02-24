@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/coga-sdm/",
+  "@type": "Standard",
+  "identifier": "COGA SDM",
+  "title": "Supplemental Guidance to WCAG 2 for People with Cognitive and Learning Disabilities",
+  "url": "https://www.w3.org/TR/coga-sdm/",
+  "description": "Cognitive accessibility guidance supplementing WCAG",
+  "publisher": "W3C"
+}

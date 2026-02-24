@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/maturity-model/",
+  "@type": "Standard",
+  "identifier": "AMM",
+  "title": "W3C Accessibility Maturity Model",
+  "url": "https://www.w3.org/TR/maturity-model/",
+  "description": "Model for assessing organizational accessibility maturity",
+  "publisher": "W3C"
+}

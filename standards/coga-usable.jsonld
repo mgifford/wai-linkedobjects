@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/coga-usable/",
+  "@type": "Standard",
+  "identifier": "COGA Usable",
+  "title": "Making Content Usable for People with Cognitive and Learning Disabilities",
+  "url": "https://www.w3.org/TR/coga-usable/",
+  "description": "Design patterns for cognitive accessibility",
+  "publisher": "W3C"
+}

@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/selectors-5/",
+  "@type": "Standard",
+  "identifier": "Selectors 5",
+  "title": "Selectors Level 5",
+  "url": "https://www.w3.org/TR/selectors-5/",
+  "description": "CSS Selectors for pattern matching against element trees",
+  "publisher": "W3C",
+  "version": "5"
+}

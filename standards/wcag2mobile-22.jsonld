@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/wcag2mobile-22/",
+  "@type": "Standard",
+  "identifier": "WCAG2Mobile 2.2",
+  "title": "Mobile Accessibility: How WCAG 2.2 Applies to Mobile",
+  "url": "https://www.w3.org/TR/wcag2mobile-22/",
+  "description": "Guidance on applying WCAG to mobile",
+  "publisher": "W3C"
+}

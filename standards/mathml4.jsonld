@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/mathml4/",
+  "@type": "Standard",
+  "identifier": "MathML 4.0",
+  "title": "Mathematical Markup Language (MathML) Version 4.0",
+  "url": "https://www.w3.org/TR/mathml4/",
+  "description": "Mathematical Markup Language for encoding mathematical notation",
+  "publisher": "W3C",
+  "version": "4.0"
+}

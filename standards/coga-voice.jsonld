@@ -1,0 +1,10 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/coga-voice/",
+  "@type": "Standard",
+  "identifier": "COGA Voice",
+  "title": "Making Content Usable for People with Cognitive and Learning Disabilities: Voice",
+  "url": "https://www.w3.org/TR/coga-voice/",
+  "description": "Voice interface considerations for cognitive accessibility",
+  "publisher": "W3C"
+}

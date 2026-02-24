@@ -1,0 +1,11 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/html-aam-1.0/",
+  "@type": "Standard",
+  "identifier": "HTML-AAM 1.0",
+  "title": "HTML Accessibility API Mappings 1.0",
+  "url": "https://www.w3.org/TR/html-aam-1.0/",
+  "description": "Defines how HTML elements map to accessibility APIs",
+  "publisher": "W3C",
+  "version": "1.0"
+}
