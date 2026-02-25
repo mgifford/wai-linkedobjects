@@ -6,12 +6,14 @@ on:
     paths:
       - '**.jsonld'
       - 'scripts/validate.py'
+      - 'scripts/generate-wcag.py'
       - '.github/workflows/validate.yml'
   pull_request:
     branches: [ main ]
     paths:
       - '**.jsonld'
       - 'scripts/validate.py'
+      - 'scripts/generate-wcag.py'
   workflow_dispatch:
 
 jobs:
