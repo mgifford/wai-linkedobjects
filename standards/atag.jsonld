@@ -1,0 +1,348 @@
+{
+  "@context": "https://raw.githubusercontent.com/mgifford/w3c-linkedobjects/main/schemas/context.jsonld",
+  "@id": "https://www.w3.org/TR/ATAG20/",
+  "@type": "Standard",
+  "identifier": "ATAG 2.0",
+  "title": "Authoring Tool Accessibility Guidelines (ATAG) 2.0",
+  "version": "2.0",
+  "date": "2015-09-24",
+  "publisher": "W3C",
+  "url": "https://www.w3.org/TR/ATAG20/",
+  "description": "Authoring Tool Accessibility Guidelines (ATAG) 2.0 provides guidelines for designing authoring tools that are accessible to authors with disabilities and that enable, support, and promote the production of accessible web content.",
+  
+  "parts": [
+    {
+      "@id": "https://www.w3.org/TR/ATAG20/#part_a",
+      "@type": "Part",
+      "identifier": "A",
+      "name": "Part A: Make the authoring tool user interface accessible",
+      "description": "Part A applies to the user interface of authoring tools and addresses how to make authoring tools accessible to authors with disabilities.",
+      "principles": [
+        {
+          "@id": "https://www.w3.org/TR/ATAG20/#principle_a1",
+          "@type": "Principle",
+          "identifier": "A.1",
+          "name": "Authoring tool user interfaces follow applicable accessibility guidelines",
+          "description": "Authoring tool user interfaces must be accessible according to WCAG 2.0.",
+          "guidelines": [
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_a11",
+              "@type": "Guideline",
+              "identifier": "A.1.1",
+              "name": "Ensure that web-based functionality is accessible",
+              "description": "Ensure that web-based authoring tool user interfaces follow WCAG 2.0.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#conformance",
+                "https://www.w3.org/TR/WCAG22/#perceivable",
+                "https://www.w3.org/TR/WCAG22/#operable",
+                "https://www.w3.org/TR/WCAG22/#understandable",
+                "https://www.w3.org/TR/WCAG22/#robust"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_a111",
+                  "@type": "SuccessCriterion",
+                  "identifier": "A.1.1.1",
+                  "name": "Web-Based Accessible",
+                  "level": "A",
+                  "description": "If the authoring tool is web-based, then it conforms to WCAG 2.0 Level A.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#conformance"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_a12",
+              "@type": "Guideline",
+              "identifier": "A.1.2",
+              "name": "Ensure that non-web-based functionality is accessible",
+              "description": "Ensure that non-web-based authoring tool user interfaces follow relevant platform accessibility guidelines.",
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_a121",
+                  "@type": "SuccessCriterion",
+                  "identifier": "A.1.2.1",
+                  "name": "Platform Accessibility Services",
+                  "level": "A",
+                  "description": "The authoring tool user interface makes use of platform accessibility services.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/wai-aria-1.2/#",
+                    "https://www.w3.org/TR/WCAG22/#name-role-value"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://www.w3.org/TR/ATAG20/#principle_a2",
+          "@type": "Principle",
+          "identifier": "A.2",
+          "name": "Editing-views are perceivable",
+          "description": "Make editing-views perceivable to authors.",
+          "guidelines": [
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_a21",
+              "@type": "Guideline",
+              "identifier": "A.2.1",
+              "name": "Make alternative content available to authors",
+              "description": "Ensure that editing-views enable alternative content to be edited.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#text-alternatives",
+                "https://www.w3.org/TR/WCAG22/#non-text-content"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_a211",
+                  "@type": "SuccessCriterion",
+                  "identifier": "A.2.1.1",
+                  "name": "Text Alternatives for Rendered Content",
+                  "level": "A",
+                  "description": "If an editing-view renders non-text content, then any associated text alternatives are also rendered.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#non-text-content",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-label",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "https://www.w3.org/TR/ATAG20/#part_b",
+      "@type": "Part",
+      "identifier": "B",
+      "name": "Part B: Support the production of accessible content",
+      "description": "Part B applies to the content produced by authoring tools and addresses how authoring tools can support authors in producing more accessible web content.",
+      "principles": [
+        {
+          "@id": "https://www.w3.org/TR/ATAG20/#principle_b1",
+          "@type": "Principle",
+          "identifier": "B.1",
+          "name": "Fully automatic processes produce accessible content",
+          "description": "Ensure that automatically-specified content is accessible.",
+          "guidelines": [
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b11",
+              "@type": "Guideline",
+              "identifier": "B.1.1",
+              "name": "Ensure that automatically-specified content is accessible",
+              "description": "Authoring tools should automatically generate accessible markup and content.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#non-text-content",
+                "https://www.w3.org/TR/WCAG22/#info-and-relationships",
+                "https://www.w3.org/TR/wai-aria-1.2/#"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b111",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.1.1.1",
+                  "name": "Content Auto-Generation After Authoring Sessions",
+                  "level": "A",
+                  "description": "The authoring tool does not automatically generate content after authoring sessions, or authors have the option to turn off this feature.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#conformance"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://www.w3.org/TR/ATAG20/#principle_b2",
+          "@type": "Principle",
+          "identifier": "B.2",
+          "name": "Authors are supported in producing accessible content",
+          "description": "Ensure that authoring tool features support accessibility.",
+          "guidelines": [
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b21",
+              "@type": "Guideline",
+              "identifier": "B.2.1",
+              "name": "Ensure that accessible content production is possible",
+              "description": "Authoring tools must enable authors to produce accessible content that conforms to WCAG 2.0.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#conformance",
+                "https://www.w3.org/TR/wai-aria-1.2/#"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b211",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.2.1.1",
+                  "name": "Accessible Content Possible",
+                  "level": "A",
+                  "description": "The authoring tool does not place restrictions on the web content that authors can create that would prevent WCAG 2.0 Level A success criteria from being met.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#conformance",
+                    "https://www.w3.org/TR/WCAG22/#non-text-content",
+                    "https://www.w3.org/TR/WCAG22/#info-and-relationships",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-label"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b22",
+              "@type": "Guideline",
+              "identifier": "B.2.2",
+              "name": "Guide authors to produce accessible content",
+              "description": "Authoring tools should assist and guide authors to produce accessible content.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#text-alternatives",
+                "https://www.w3.org/TR/WCAG22/#adaptable"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b221",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.2.2.1",
+                  "name": "Accessible Markup: Available",
+                  "level": "A",
+                  "description": "Accessible markup options are provided to authors.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#non-text-content",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-label",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-labelledby",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-describedby"
+                  ]
+                },
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b222",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.2.2.2",
+                  "name": "Accessible Markup: Prompting",
+                  "level": "A",
+                  "description": "If authors can insert markup, authors are prompted for accessibility information.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#non-text-content",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-label"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://www.w3.org/TR/ATAG20/#principle_b3",
+          "@type": "Principle",
+          "identifier": "B.3",
+          "name": "Authors are supported in improving the accessibility of existing content",
+          "description": "Assist authors in checking for and correcting accessibility problems.",
+          "guidelines": [
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b31",
+              "@type": "Guideline",
+              "identifier": "B.3.1",
+              "name": "Assist authors in checking for accessibility problems",
+              "description": "Provide accessibility checking features.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#conformance"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b311",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.3.1.1",
+                  "name": "Checking Assistance",
+                  "level": "A",
+                  "description": "The authoring tool provides checking for accessibility problems.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#conformance",
+                    "https://www.w3.org/TR/WCAG22/#non-text-content",
+                    "https://www.w3.org/TR/WCAG22/#info-and-relationships"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b32",
+              "@type": "Guideline",
+              "identifier": "B.3.2",
+              "name": "Assist authors in repairing accessibility problems",
+              "description": "Provide accessibility repair features.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#conformance"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b321",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.3.2.1",
+                  "name": "Repair Assistance",
+                  "level": "A",
+                  "description": "If checking has identified accessibility problems, repair suggestions are provided.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#conformance",
+                    "https://www.w3.org/TR/WCAG22/#non-text-content",
+                    "https://www.w3.org/TR/wai-aria-1.2/#aria-label"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "@id": "https://www.w3.org/TR/ATAG20/#principle_b4",
+          "@type": "Principle",
+          "identifier": "B.4",
+          "name": "Authoring tools promote and integrate their accessibility features",
+          "description": "Ensure that accessibility features are prominent and integrated.",
+          "guidelines": [
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b41",
+              "@type": "Guideline",
+              "identifier": "B.4.1",
+              "name": "Ensure the availability of features that support the production of accessible content",
+              "description": "Accessibility features should be turned on or prominently available.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#conformance"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b411",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.4.1.1",
+                  "name": "Features Active by Default",
+                  "level": "A",
+                  "description": "All accessible content support features are turned on by default.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#conformance"
+                  ]
+                }
+              ]
+            },
+            {
+              "@id": "https://www.w3.org/TR/ATAG20/#gl_b42",
+              "@type": "Guideline",
+              "identifier": "B.4.2",
+              "name": "Ensure that documentation promotes the production of accessible content",
+              "description": "Provide documentation on accessibility features and accessible content production.",
+              "relatedTo": [
+                "https://www.w3.org/TR/WCAG22/#understanding-metadata"
+              ],
+              "successCriteria": [
+                {
+                  "@id": "https://www.w3.org/TR/ATAG20/#sc_b421",
+                  "@type": "SuccessCriterion",
+                  "identifier": "B.4.2.1",
+                  "name": "Model Practice",
+                  "level": "A",
+                  "description": "Accessible content production practices are documented.",
+                  "relatedTo": [
+                    "https://www.w3.org/TR/WCAG22/#understanding-metadata"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

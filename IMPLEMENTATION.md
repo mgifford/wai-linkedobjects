@@ -321,7 +321,7 @@ w3c-linkedobjects/
 ### ✅ Pull Same Specifications
 - WCAG ✓
 - ARIA ✓
-- ATAG (structure ready, content needed)
+- ATAG ✓
 - UAAG (structure ready, content needed)
 - HTML (structure ready, content needed)
 - CSS (structure ready, content needed)
@@ -356,7 +356,7 @@ w3c-linkedobjects/
 ## Next Steps for Expansion
 
 1. **Complete WCAG 2.2**: Add remaining 52 success criteria
-2. **Create ATAG**: Authoring Tool guidelines
+2. ~~**Create ATAG**: Authoring Tool guidelines~~ ✅ **Completed**
 3. **Create UAAG**: User Agent guidelines
 4. **HTML Accessibility**: Semantic HTML elements and attributes
 5. **CSS Accessibility**: CSS features for accessibility
@@ -365,6 +365,20 @@ w3c-linkedobjects/
 8. **GitHub Pages**: Web interface for browsing standards
 9. **Examples**: Code examples showing compliant implementations
 10. **Tests**: Automated tests for scripts
+
+## Recent Updates
+
+### ATAG 2.0 Implementation (2026-02-24)
+- ✅ Created `standards/atag.jsonld` with complete Part A and Part B structure
+- ✅ Added 15+ success criteria with explicit relationships to WCAG
+- ✅ Demonstrated ATAG → WCAG → ARIA relationship chain
+- ✅ Created comprehensive documentation in `docs/linked-relationships.md`
+- ✅ All relationships use URI-based linking with semantic web compatibility
+
+The ATAG implementation demonstrates how the linkedobjects.org structure supports showing relationships between documents:
+- **ATAG references WCAG**: Using `relatedTo` property with WCAG URIs
+- **WCAG references ARIA**: Using `relatedTo` and `techniques` properties
+- **Complete chain traceability**: From authoring tool requirements → content guidelines → implementation mechanisms
 
 ## Conclusion
 

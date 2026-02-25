@@ -28,6 +28,14 @@
       "datePublished": "2023-06-06"
     },
     {
+      "@id": "standards/atag.jsonld",
+      "name": "ATAG 2.0",
+      "description": "Authoring Tool Accessibility Guidelines 2.0",
+      "publisher": "W3C",
+      "status": "recommendation",
+      "datePublished": "2015-09-24"
+    },
+    {
       "@id": "standards/ethical-web-principles.jsonld",
       "name": "Ethical Web Principles",
       "description": "Ethical principles for the Web",
