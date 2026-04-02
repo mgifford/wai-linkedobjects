@@ -13,7 +13,6 @@ For WCAG standards, it also validates completeness:
 import json
 import sys
 from pathlib import Path
-from typing import List, Tuple, Set
 
 
 def count_success_criteria(data: dict) -> int:
@@ -30,7 +29,7 @@ def count_success_criteria(data: dict) -> int:
     return count
 
 
-def extract_sc_identifiers(data: dict) -> Set[str]:
+def extract_sc_identifiers(data: dict) -> set[str]:
     """Extract all success criterion identifiers from a WCAG document."""
     identifiers = set()
     
@@ -46,7 +45,7 @@ def extract_sc_identifiers(data: dict) -> Set[str]:
     return identifiers
 
 
-def validate_wcag_completeness(data: dict, file_name: str) -> List[str]:
+def validate_wcag_completeness(data: dict, file_name: str) -> list[str]:
     """
     Validate WCAG document completeness.
     
@@ -93,7 +92,7 @@ def validate_wcag_completeness(data: dict, file_name: str) -> List[str]:
     return errors
 
 
-def validate_json_ld(file_path: Path) -> Tuple[bool, List[str]]:
+def validate_json_ld(file_path: Path) -> tuple[bool, list[str]]:
     """
     Validate a JSON-LD file.
     
@@ -176,7 +175,7 @@ def validate_all_jsonld_files(base_path: Path) -> bool:
                     if "principles" in data:
                         sc_count = count_success_criteria(data)
                         print(f"   └─ {sc_count} success criteria")
-                except:
+                except Exception:
                     pass
         else:
             print(f"❌ {file_path.relative_to(base_path)}")
