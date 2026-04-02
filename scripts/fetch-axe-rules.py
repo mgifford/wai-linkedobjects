@@ -9,6 +9,7 @@ and generates an updated JSON-LD document.
 import json
 import sys
 from datetime import datetime
+from pathlib import Path
 import requests
 
 
@@ -45,19 +46,18 @@ def fetch_axe_rules() -> dict:
         }
 
 
-def save_status_report(axe_info: dict, output_file: str = "monitoring/axe-status.json"):
+def save_status_report(axe_info: dict, output_file: str = "monitoring/axe-status.json") -> None:
     """Save the status report to a JSON file."""
     report = {
         "checked_at": datetime.now().isoformat(),
         "axe-core": axe_info
     }
-    
-    import os
-    os.makedirs("monitoring", exist_ok=True)
-    
+
+    Path(output_file).parent.mkdir(parents=True, exist_ok=True)
+
     with open(output_file, 'w') as f:
         json.dump(report, f, indent=2)
-    
+
     print(f"Status report saved to: {output_file}")
 
 

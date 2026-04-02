@@ -13,7 +13,6 @@ The script can generate:
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List
 from datetime import datetime
 
 
@@ -240,7 +239,7 @@ def slug_from_name(name: str) -> str:
     return slug
 
 
-def build_sc_object(sc: Dict, version: str = "2.2") -> Dict:
+def build_sc_object(sc: dict, version: str = "2.2") -> dict:
     """Build a success criterion JSON-LD object."""
     sc_id = sc["id"]
     sc_name = sc["name"]
@@ -260,7 +259,7 @@ def build_sc_object(sc: Dict, version: str = "2.2") -> Dict:
     }
 
 
-def generate_wcag_22() -> Dict:
+def generate_wcag_22() -> dict:
     """Generate complete WCAG 2.2 JSON-LD document."""
     
     # Build the structure
@@ -343,7 +342,7 @@ def generate_wcag_22() -> Dict:
     return doc
 
 
-def save_json_ld(data: Dict, output_path: Path, indent: int = 2):
+def save_json_ld(data: dict, output_path: Path, indent: int = 2) -> None:
     """Save JSON-LD document to file."""
     output_path.parent.mkdir(parents=True, exist_ok=True)
     
