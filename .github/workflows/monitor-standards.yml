@@ -32,12 +32,14 @@ jobs:
           python scripts/fetch-standards.py
       
       - name: Check axe-core rules
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python scripts/fetch-axe-rules.py
       
       - name: Upload monitoring reports
+        if: always()
         uses: actions/upload-artifact@v7
         with:
           name: monitoring-reports
@@ -50,19 +52,20 @@ jobs:
           script: |
             const fs = require('fs');
             
-            let body = '## W3C Standards Update Detected\n\n';
-            body += 'Automated monitoring has detected changes in W3C accessibility standards.\n\n';
+            let body = '## W3C Standards Monitoring: Failure Detected\n\n';
+            body += 'Automated monitoring encountered an error while checking W3C accessibility standards or related tools.\n\n';
             body += '### Actions Required\n';
             body += '1. Review the monitoring reports in the workflow artifacts\n';
-            body += '2. Update the corresponding JSON-LD files if needed\n';
-            body += '3. Run validation: `python scripts/validate.py`\n';
-            body += '4. Close this issue once updates are complete\n\n';
+            body += '2. Check the workflow logs to identify the failure\n';
+            body += '3. Update the corresponding JSON-LD files if actual standards changes are found\n';
+            body += '4. Run validation: `python scripts/validate.py`\n';
+            body += '5. Close this issue once investigation is complete\n\n';
             body += `Workflow run: ${context.payload.repository.html_url}/actions/runs/${context.runId}`;
             
             github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              title: '🔔 W3C Standards Update Detected',
+              title: '🔔 W3C Standards Monitoring: Failure Detected',
               body: body,
               labels: ['monitoring', 'standards-update']
             });
