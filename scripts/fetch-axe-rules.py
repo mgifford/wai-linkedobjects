@@ -46,11 +46,27 @@ def fetch_axe_rules() -> dict:
             "url": "https://github.com/dequelabs/axe-core"
         }
 
-    except Exception as e:
+    except requests.HTTPError as e:
+        if e.response is not None and e.response.status_code == 403:
+            print(
+                f"GitHub API rate limit exceeded; skipping axe-core check: {e}"
+            )
+            return {
+                "status": "rate_limited",
+                "error": str(e),
+                "url": "https://github.com/dequelabs/axe-core",
+            }
+        print(f"HTTP error fetching axe-core rules: {e}")
+        return {
+            "status": "error",
+            "error": str(e),
+        }
+
+    except requests.RequestException as e:
         print(f"Error fetching axe-core rules: {e}")
         return {
             "status": "error",
-            "error": str(e)
+            "error": str(e),
         }
 
 
@@ -72,7 +88,7 @@ def save_status_report(
     print(f"Status report saved to: {output_file}")
 
 
-def main():
+def main() -> int:
     """Main function to check axe-core rules."""
     axe_info = fetch_axe_rules()
 
@@ -81,11 +97,14 @@ def main():
 
     if axe_info.get("status") == "error":
         print("\n⚠️  Error checking axe-core")
-        sys.exit(1)
+        return 1
+    elif axe_info.get("status") == "rate_limited":
+        print("\n⚠️  GitHub API rate limit reached; axe-core check skipped")
+        return 0
     else:
         print("\n✅ axe-core checked successfully")
-        sys.exit(0)
+        return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
