@@ -32,18 +32,17 @@ jobs:
         with:
           python-version: '3.11'
       
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: uv sync --frozen
       
       - name: Generate WCAG JSON-LD
-        run: |
-          python scripts/generate-wcag.py
+        run: uv run python scripts/generate-wcag.py
       
       - name: Validate generated files
-        run: |
-          python scripts/validate.py
+        run: uv run python scripts/validate.py
       
       - name: Check for changes
         id: git-check

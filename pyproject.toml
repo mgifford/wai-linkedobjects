@@ -1,0 +1,23 @@
+[project]
+name = "wai-linkedobjects"
+version = "0.1.0"
+description = "Machine-readable accessibility standards in JSON-LD format for AI systems."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=4.9.0",
+    "jsonschema>=4.19.0",
+    "pyyaml>=6.0",
+    "rdflib>=7.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
+[tool.ruff]
+line-length = 88
