@@ -99,8 +99,24 @@ This repository uses GitHub Actions to automatically:
 
 Manual updates can be triggered via:
 ```bash
-python scripts/fetch-standards.py
-python scripts/fetch-axe-rules.py
+uv run python scripts/fetch-standards.py
+uv run python scripts/fetch-axe-rules.py
+```
+
+## Development Setup
+
+This project uses [uv](https://docs.astral.sh/uv/) for dependency and project
+management.
+
+```bash
+# Install dependencies from pyproject.toml + uv.lock
+uv sync
+
+# Run scripts in the project environment
+uv run python scripts/validate.py
+
+# Add a new dependency
+uv add <package>
 ```
 
 ## JSON-LD Format

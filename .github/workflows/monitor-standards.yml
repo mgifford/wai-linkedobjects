@@ -22,21 +22,20 @@ jobs:
         with:
           python-version: '3.11'
       
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
       - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+        run: uv sync --frozen
       
       - name: Check W3C standards
-        run: |
-          python scripts/fetch-standards.py
+        run: uv run python scripts/fetch-standards.py
       
       - name: Check axe-core rules
         continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python scripts/fetch-axe-rules.py
+        run: uv run python scripts/fetch-axe-rules.py
       
       - name: Upload monitoring reports
         if: always()
@@ -58,7 +57,7 @@ jobs:
             body += '1. Review the monitoring reports in the workflow artifacts\n';
             body += '2. Check the workflow logs to identify the failure\n';
             body += '3. Update the corresponding JSON-LD files if actual standards changes are found\n';
-            body += '4. Run validation: `python scripts/validate.py`\n';
+            body += '4. Run validation: `uv run python scripts/validate.py`\n';
             body += '5. Close this issue once investigation is complete\n\n';
             body += `Workflow run: ${context.payload.repository.html_url}/actions/runs/${context.runId}`;
             

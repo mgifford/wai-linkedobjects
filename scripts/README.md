@@ -108,9 +108,9 @@ To add WCAG 2.1 generation:
 
 ## Requirements
 
-All scripts require dependencies from `requirements.txt`:
+All scripts require dependencies from `pyproject.toml` and `uv.lock`:
 ```bash
-pip install -r requirements.txt
+uv sync
 ```
 
 ## Completeness Guarantee

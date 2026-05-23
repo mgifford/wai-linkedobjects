@@ -27,7 +27,7 @@ We welcome suggestions for:
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
-4. Run validation: `python scripts/validate.py`
+4. Run validation: `uv run python scripts/validate.py`
 5. Commit your changes with clear commit messages
 6. Push to your branch
 7. Open a Pull Request
@@ -101,14 +101,20 @@ When axe or SiteImprove updates their rules:
 Before submitting a PR:
 
 ```bash
+# Sync dependencies from pyproject.toml + uv.lock
+uv sync
+
 # Validate all JSON-LD files
-python scripts/validate.py
+uv run python scripts/validate.py
 
 # Check W3C standards status
-python scripts/fetch-standards.py
+uv run python scripts/fetch-standards.py
 
 # Check axe rules status
-python scripts/fetch-axe-rules.py
+uv run python scripts/fetch-axe-rules.py
+
+# Add a new dependency
+uv add <package>
 ```
 
 ## Code Style
